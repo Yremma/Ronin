@@ -14,6 +14,9 @@ import 'vue-canvasvideo/dist/vuecanvasvideo.min.css'
 
 import App              from './App.vue'
 import Home             from '@/components/Home'
+import Flaco            from '@/components/Nosotros_Flaco'
+import Irema            from '@/components/Nosotros_Irema'
+import Oso              from '@/components/Nosotros_Oso'
 
 
 Vue.config.productionTip = false
@@ -27,6 +30,12 @@ const router = new Router({
     mode: 'history',
     routes: [
         {   path: '/',              name: 'home',           component: Home,
+        },
+        {   path: '/flaco',         name: 'flaco',          component: Flaco,
+        },
+        {   path: '/irema',         name: 'irema',          component: Irema,
+        },
+        {   path: '/oso',           name: 'oso',            component: Oso,
         },
         {   path: '',               redirect: '/',
         },
