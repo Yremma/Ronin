@@ -1,22 +1,21 @@
 <template>
     <div id="irema" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }" style="overflow:hidden !important">
         <div id="scene">   
-            <div data-depth="0.05" align="center">
-                <img src="../assets/Ladrillos.jpg" style="margin-top:-5%; margin-left:-5%; width:110%"/>
+            <div data-depth="0.05" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
+                <img src="../assets/Ladrillos.jpg"          :class="ClaseLadrillos"/>
             </div>
-            <div data-depth="0.1">
-                <img src="../assets/Humo2.jpg" 
-                style="margin-top:-20%; margin-left:-15%; width:120%; opacity:0.6"/>
+            <div data-depth="0.10" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
+                <img src="../assets/Humo2.jpg"                                      style="width:101%; opacity:0.6; position:absolute; bottom:-1%"/>
             </div>
-            <div data-depth="-0.1">
-                <img src="../assets/Humo3.jpg" 
-                style="margin-top:-25%; margin-left:-5%; width:110%; opacity:0.4"/>
+            <div data-depth="-0.1" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
+                <img src="../assets/Humo3.jpg"                                      style="width:111%; opacity:0.4; position:absolute; bottom:-1%; margin-left:-3%"/>
             </div>
-            <div data-depth="0.01" style="padding-top:5%">
-                <img class="foto" src="../assets/nosotros_irema.png" style="width:70%"/>
+            <div data-depth="0.01" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
+                <img src="../assets/nosotros_irema.png"     :class="ClaseImagen"    style="position:absolute; bottom:-1%"/>
             </div>            
         </div>
-        <div id="CV_Irema">
+
+        <div id="CV_Irema" :class="ClaseTexto">
             <center style="font-family:'Permanent Marker'; margin-bottom:20px">Yremma</center>
             <hr>
             Historietista, Ilustradora, Desarrolladora de Software y Soprano Lírica.<br>
@@ -33,42 +32,69 @@
 <script>    
     import Parallax from 'parallax-js'
     
+
     export default 
     {   data()
         {   return {
-                Ancho:  window.innerWidth  * 98.7/100,
-                Alto:   window.innerHeight * 97/100,
+                Ancho:              window.innerWidth  * 97 /100,
+                Alto:               window.innerHeight * 97 /100,
+                ClaseImagen:        'ImagenHorizontal',
+                ClaseLadrillos:     'LadrillosHorizontal',
+                ClaseTexto:         'TextoHorizontal',                
             }
         },
         
+
         mounted()
-        {   var scene = document.getElementById('scene');
-            var parallaxInstance = new Parallax(scene); 
+        {   var scene               = document.getElementById('scene');
+            var parallaxInstance    = new Parallax(scene); 
+
+            if(this.Alto>this.Ancho)    
+            {   this.ClaseImagen    = 'ImagenVertical';
+                this.ClaseLadrillos = 'LadrillosVertical';
+                this.ClaseTexto     = 'TextoVertical';
+            }
 
             setTimeout(function() { 
                 var CV = document.getElementById('CV_Irema');
                 CV.classList.toggle('fadein');
-            }, 3000);         
+            }, 3000); 
         }
     }
 </script>
 
 
 
-<style>
+<style>    
+    .ImagenHorizontal
+    {   width: 70%;
+    }
+    .ImagenVertical
+    {   width: 140%;
+    }
+
+    .LadrillosHorizontal
+    {   width: 100%;
+    }
+    .LadrillosVertical
+    {   width: 150%;
+    }
+
+
     #CV_Irema
     {   position: absolute;
         right: 5%;
-        color: #f00;        
         font-family: 'Gamja Flower';
         font-size: 0%;
         font-weight: bold;
         text-align: justify;
         background: rgba(0,0,0,0.5);
         padding: 20px;
+
+        color: #f00;
+        text-shadow: 0px 0px 5px rgba(255, 0, 0, 1);
     
         top: 90%;
-        width: 50%;
         opacity: 0;
         transition: opacity 7s;
         -webkit-transition: all 700ms ease-in-out;
@@ -76,13 +102,30 @@
         -o-transition: all 700ms ease-in-out;
         -ms-transition: all 700ms ease-in-out;
         transition: all 700ms ease-in-out; 
-        
-        text-shadow: 0px 0px 5px rgba(255, 0, 0, 1);
     }
-    #CV_Irema.fadein
-    {   top: 10%;
-        font-size: 2.1em;
+
+    .TextoHorizontal
+    {   width: 50%;
+    }
+    .TextoVertical
+    {   width: 80%;
+    }
+
+    #CV_Irema.TextoHorizontal.fadein
+    {   top: 5%;        
         opacity: 1;
+        font-size: 2.25vw; 
+        transition: opacity 7s;
+        -webkit-transition: all 700ms ease-in-out;
+        -moz-transition: all 700ms ease-in-out;
+        -o-transition: all 700ms ease-in-out;
+        -ms-transition: all 700ms ease-in-out;
+        transition: all 700ms ease-in-out;
+    }
+    #CV_Irema.TextoVertical.fadein
+    {   top: 5%;        
+        opacity: 1;
+        font-size: 4.5vw; 
         transition: opacity 7s;
         -webkit-transition: all 700ms ease-in-out;
         -moz-transition: all 700ms ease-in-out;
