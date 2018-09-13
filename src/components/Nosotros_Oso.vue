@@ -46,7 +46,7 @@
 
         mounted()
         {   var scene               = document.getElementById('scene');
-            var parallaxInstance    = new Parallax(scene); 
+            new Parallax(scene); 
 
             if(this.Alto>this.Ancho)    
             {   this.ClaseFuego     = 'FuegoVertical';

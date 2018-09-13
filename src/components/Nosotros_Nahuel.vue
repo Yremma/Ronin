@@ -1,27 +1,25 @@
 <template>
-    <div id="irema" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }" style="overflow:hidden !important">
+    <div id="nahuel" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }" style="overflow:hidden !important">
         <div id="scene">   
             <div data-depth="0.05" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
                 <img src="../assets/Ladrillos.jpg"          :class="ClaseLadrillos" />
             </div>
-            <div data-depth="0.10" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
-                <img src="../assets/Humo2.jpg"              :class="ClaseHumo"      />
+            <div data-depth="-0.5" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
+                <img src="../assets/Fuego2.jpg"             :class="ClaseFuego"     />
             </div>
-            <div data-depth="-0.1" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
-                <img src="../assets/Humo3.jpg"              :class="ClaseHumo"      />
-            </div>
-            <div data-depth="0.01" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
-                <img src="../assets/nosotros_irema.png"     :class="ClaseImagen"    style="position:absolute; bottom:-1%"/>
+            <div data-depth="0.02" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
+                <img src="../assets/nosotros_nahuel.png"     :class="ClaseImagen"    style="position:absolute; bottom:-1%; right:2%"/>
             </div>            
         </div>
 
-        <div id="CV_Irema" :class="ClaseTexto">
-            <center style="font-family:'Permanent Marker'; margin-bottom:20px">Yremma</center>
+        <div id="CV_Nahuel" :class="ClaseTexto">
+            <center style="font-family:'Permanent Marker'; margin-bottom:20px">Nahuel</center>
             <hr>
-            Historietista, Ilustradora, Desarrolladora de Software y Soprano Lírica.<br>
-            Ex tecladista de Helden (tributo a Rammstein) y de Concordia (Metal Progresivo).<br>
-            Ex vocalista de Fenix (tributo a bandas de Hardrock) y de Atenea (Metal Sinfónico).<br>
-            Tecladista en Regular Juan (tributo a Queens of the Stone Age).<br><br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+            in culpa qui officia deserunt mollit anim id est laborum.<br><br>
             En Ronin desde el 26 de Junio de 2017.
         </div>
     </div>
@@ -38,8 +36,8 @@
         {   return {
                 Ancho:              window.innerWidth  * 97 /100,
                 Alto:               window.innerHeight * 97 /100,
-                ClaseHumo:          'HumoHorizontal',
-                ClaseImagen:        'ImagenHorizontal',
+                ClaseFuego:         'FuegoHorizontal',
+                ClaseImagen:        'ImagenHorizontalG',
                 ClaseLadrillos:     'LadrillosHorizontal',
                 ClaseTexto:         'TextoHorizontal',                
             }
@@ -51,14 +49,14 @@
             new Parallax(scene); 
 
             if(this.Alto>this.Ancho)    
-            {   this.ClaseHumo      = 'HumoVertical';
+            {   this.ClaseFuego     = 'FuegoVertical2';
                 this.ClaseImagen    = 'ImagenVertical';
                 this.ClaseLadrillos = 'LadrillosVertical';
                 this.ClaseTexto     = 'TextoVertical';
             }
 
             setTimeout(function() { 
-                var CV = document.getElementById('CV_Irema');
+                var CV = document.getElementById('CV_Nahuel');
                 CV.classList.toggle('fadein');
             }, 3000); 
         }
@@ -67,22 +65,24 @@
 
 
 
-<style>    
-    .HumoHorizontal
-    {   width:  110%;
-        margin-left: -5%; 
-        opacity: 0.6; 
-        margin-top: -5%;
+<style>
+    .FuegoHorizontal
+    {   width: 121%; 
+        opacity: 0.8; 
+        position: absolute; 
+        bottom: -10%; 
+        margin-left: -10%;
     }
-    .HumoVertical
-    {   width:  250%;
-        margin-left: -5%; 
-        opacity: 0.6; 
-        margin-top: -20%;
+    .FuegoVertical2
+    {   width: 300%; 
+        opacity: 0.8; 
+        position: absolute; 
+        bottom: -10%; 
+        margin-left: -10%;
     }
-    
-    .ImagenHorizontal
-    {   width: 70%;
+
+    .ImagenHorizontalG
+    {   width: 80%;
     }
     .ImagenVertical
     {   width: 140%;
@@ -95,19 +95,18 @@
     {   width: 150%;
     }
 
-
-    #CV_Irema
+    #CV_Nahuel
     {   position: absolute;
-        right: 5%;
+        left: 5%;
         font-family: 'Gamja Flower';
         font-size: 0%;
         font-weight: bold;
         text-align: justify;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.7);
         padding: 20px;
 
-        color: #f00;
-        text-shadow: 0px 0px 5px rgba(255, 0, 0, 1);
+        color: #fff;
+        text-shadow: 0px 0px 5px rgba(255, 255, 255, 1);
     
         top: 90%;
         opacity: 0;
@@ -126,10 +125,10 @@
     {   width: 80%;
     }
 
-    #CV_Irema.TextoHorizontal.fadein
+    #CV_Nahuel.TextoHorizontal.fadein
     {   top: 5%;        
         opacity: 1;
-        font-size: 2.25vw; 
+        font-size: 2vw; 
         transition: opacity 7s;
         -webkit-transition: all 700ms ease-in-out;
         -moz-transition: all 700ms ease-in-out;
@@ -137,10 +136,10 @@
         -ms-transition: all 700ms ease-in-out;
         transition: all 700ms ease-in-out;
     }
-    #CV_Irema.TextoVertical.fadein
+    #CV_Nahuel.TextoVertical.fadein
     {   top: 5%;        
         opacity: 1;
-        font-size: 4.5vw; 
+        font-size: 3.8vw; 
         transition: opacity 7s;
         -webkit-transition: all 700ms ease-in-out;
         -moz-transition: all 700ms ease-in-out;

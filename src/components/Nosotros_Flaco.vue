@@ -13,7 +13,7 @@
         </div>
 
         <div id="CV_Flaco" :class="ClaseTexto">
-            <center style="font-family:'Permanent Marker'; margin-bottom:20px">Javier</center>
+            <center style="font-family:'Permanent Marker'; margin-bottom:20px">Jota</center>
             <hr>
             Actor, Dibujante, Cocinero, Barman, Tenor Lírico.<br>
             Ex guitarrista de Shaggy (Indi Rock) y Mandala (Tributo a The Strokes).<br><br>
@@ -43,7 +43,7 @@
 
         mounted()
         {   var scene               = document.getElementById('scene');
-            var parallaxInstance    = new Parallax(scene); 
+            new Parallax(scene); 
 
             if(this.Alto>this.Ancho)    
             {   this.ClaseHumo      = 'HumoVertical';
