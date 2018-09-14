@@ -1,11 +1,10 @@
 <template>
     <div id="classroom">
-        <div id="divAntes">
-            <img src="../assets/antes.png" style="width:100%; opacity:0"/>
-        </div>
-        <div id="divDespues">
-            <img src="../assets/despues.png" style="width:100%; opacity:0"/>
-        </div>
+
+        <div id="divAntes"   :class="ClaseAntes"    :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }"></div>
+
+        <div id="divDespues" :class="ClaseDespues"  :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }"></div>
+
     </div>
 </template>
 
@@ -13,7 +12,21 @@
 
 <script>
     export default 
-    {   
+    {   data()
+        {   return {
+                Ancho:              window.innerWidth  * 97 /100,
+                Alto:               window.innerHeight * 100 /100, 
+                ClaseAntes:         'AntesHorizontal',
+                ClaseDespues:       'DespuesHorizontal',
+            }
+        }, 
+
+        mounted()
+        {   if(this.Alto>this.Ancho)    
+            {   this.ClaseAntes      = 'AntesVertical';
+                this.ClaseDespues    = 'DespuesVertical';
+            }
+        }  
     }
 </script>
 
@@ -23,13 +36,18 @@
    #divAntes 
     {   background-image: url('../assets/antes.png');
         background-size: cover;
-        background-position: center;
         background-attachment: fixed;
     }
     #divDespues
     {   background-image: url('../assets/despues.png');
         background-size: cover;
-        background-position: center;
         background-attachment: fixed;
+    }
+
+    .AntesHorizontal, .DespuesHorizontal
+    {   background-position: center;
+    }    
+    .AntesVertical, .DespuesVertical
+    {   background-position: 10%;
     }
 </style>
