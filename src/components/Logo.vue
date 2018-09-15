@@ -26,7 +26,7 @@
     {   data()
         {   return {
                 Ancho:              window.innerWidth  * 97 /100,
-                Alto:               window.innerHeight * 100 /100,                
+                Alto:               window.innerHeight * 100/100,                
                 ClaseFondo1:        'Fondo1Horizontal',
                 ClaseFondo2:        'Fondo2Horizontal',
                 ClaseFondo3:        'Fondo3Horizontal',
@@ -102,12 +102,12 @@
 
     .LogoHorizontal
     {   margin-left: 15%;
-        margin-top: 25%;
+        margin-top: 20%;
         width: 70%;
     }
     .LogoVertical
     {   margin-left: 0%;
-        margin-top: 75%;
+        margin-top: 55%;
         width: 100%;
     }
 </style>
