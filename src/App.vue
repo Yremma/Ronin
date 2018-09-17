@@ -1,7 +1,9 @@
 <template>
     <el-container id="app">
         <el-main style="padding:0px">
+            <Header></Header>
             <router-view></router-view>
+            <Footer></Footer>
         </el-main>
     </el-container>
 </template>
@@ -9,8 +11,17 @@
 
 
 <script>
+    import Header   from '@/components/Header'
+    import Footer   from '@/components/Footer'
+    
     export default
-    {   data()
+    {   components: {
+            Header,
+            Footer
+        },
+        
+        
+        data()
         {   return {
                 Ancho:  window.innerWidth  * 97 /100,
             }

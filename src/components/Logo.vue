@@ -11,7 +11,7 @@
                 <img src="../assets/fondo2.png" style="width:100%"/>
             </div>
             <div data-depth="-0.25" :class="ClaseLogo"  >
-                <img src="../assets/Logo.png"   style="width:100%"/>
+                <!--<img src="../assets/Logo.png"   style="width:100%"/>-->
             </div>
         </div>
     </div>
