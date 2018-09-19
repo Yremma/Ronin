@@ -15,11 +15,9 @@
         <div id="CV_Justy" :class="ClaseTexto">
             <center style="font-family:'Permanent Marker'; margin-bottom:20px">Justy</center>
             <hr>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
-            in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+            Master de Rol, Escritor de Literatura Fantástica y Masajista.<br>
+            Ex Vocalista y Bajista de Estrés Matutino (tributo a bandas de Rock Nacional) y de Sólo 3 Noches 
+            (tributo a bandas de Rock Internacional).<br><br>
             En Ronin desde el 26 de Junio de 2017.
         </div>
     </div>
@@ -127,9 +125,9 @@
 
     #CV_Justy.TextoHorizontal.fadein
     {   width: 40%;
-        top: 5%;        
+        top: 10%;        
         opacity: 1;
-        font-size: 2vw; 
+        font-size: 2.5vw; 
         transition: opacity 7s;
         -webkit-transition: all 700ms ease-in-out;
         -moz-transition: all 700ms ease-in-out;

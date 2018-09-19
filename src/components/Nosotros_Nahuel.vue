@@ -15,11 +15,8 @@
         <div id="CV_Nahuel" :class="ClaseTexto">
             <center style="font-family:'Permanent Marker'; margin-bottom:20px">Nahuel</center>
             <hr>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
-            in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+            Historiador y Cantante desde los 11 años.<br>
+            Ex Vocalista de Estrés Matutino (tributo a bandas de Rock Nacional).<br><br>
             En Ronin desde el 26 de Junio de 2017.
         </div>
     </div>
@@ -128,7 +125,7 @@
     #CV_Nahuel.TextoHorizontal.fadein
     {   top: 5%;        
         opacity: 1;
-        font-size: 2vw; 
+        font-size: 3vw; 
         transition: opacity 7s;
         -webkit-transition: all 700ms ease-in-out;
         -moz-transition: all 700ms ease-in-out;
