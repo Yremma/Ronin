@@ -1,13 +1,13 @@
 <template>
-    <div id="home">
-
+    <div id="home" style="overflow:hidden">
 
         <!-- Logo Principal -->
         <Logo></Logo>
 
-
         <!-- Classroom -->
         <Classroom></Classroom>
+
+        <!-- Nosotros -->
 
     </div>
 </template>

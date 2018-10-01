@@ -1,16 +1,16 @@
 <template>
-    <div id="irema" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }" style="overflow:hidden !important">
+    <div id="irema" style="width:100vw; height:97vh; overflow:hidden !important">
         <div id="scene">   
-            <div data-depth="0.05" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
+            <div data-depth="0.05" style="width:100vw; height:100vh">
                 <img src="../assets/Ladrillos.jpg"          :class="ClaseLadrillos" />
             </div>
-            <div data-depth="0.10" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
+            <div data-depth="0.10" style="width:100vw; height:100vht">
                 <img src="../assets/Humo2.jpg"              :class="ClaseHumo"      />
             </div>
-            <div data-depth="-0.1" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
+            <div data-depth="-0.1" style="width:100vw; height:100vh">
                 <img src="../assets/Humo3.jpg"              :class="ClaseHumo"      />
             </div>
-            <div data-depth="0.01" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
+            <div data-depth="0.01" style="width:100vw; height:100vh">
                 <img src="../assets/nosotros_irema.png"     :class="ClaseImagen"    style="position:absolute; bottom:-1%"/>
             </div>            
         </div>
@@ -36,8 +36,8 @@
     export default 
     {   data()
         {   return {
-                Ancho:              window.innerWidth  * 97 /100,
-                Alto:               window.innerHeight * 97 /100,
+                Ancho:              window.innerWidth,
+                Alto:               window.innerHeight,
                 ClaseHumo:          'HumoHorizontal',
                 ClaseImagen:        'ImagenHorizontal',
                 ClaseLadrillos:     'LadrillosHorizontal',

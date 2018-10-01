@@ -1,5 +1,5 @@
 <template>
-    <div id="logo" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
+    <div id="logo" style="height:100vh">
         <div id="scene">                        
             <div data-depth="1"     :class="ClaseFondo1">
                 <img src="../assets/fondo1.png" style="width:100%"/>
@@ -11,7 +11,7 @@
                 <img src="../assets/fondo2.png" style="width:100%"/>
             </div>
             <div data-depth="-0.25" :class="ClaseLogo"  >
-                <!--<img src="../assets/Logo.png"   style="width:100%"/>-->
+                <img src="../assets/Logo.png"   style="width:100%"/>
             </div>
         </div>
     </div>
@@ -25,8 +25,8 @@
     export default 
     {   data()
         {   return {
-                Ancho:              window.innerWidth  * 97 /100,
-                Alto:               window.innerHeight * 100/100,                
+                Ancho:              window.innerWidth,
+                Alto:               window.innerHeight,                
                 ClaseFondo1:        'Fondo1Horizontal',
                 ClaseFondo2:        'Fondo2Horizontal',
                 ClaseFondo3:        'Fondo3Horizontal',

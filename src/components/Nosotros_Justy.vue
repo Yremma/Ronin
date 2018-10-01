@@ -1,13 +1,13 @@
 <template>
-    <div id="justy" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }" style="overflow:hidden !important">
+    <div id="justy" style="width:100vw; height:97vh; overflow:hidden !important">
         <div id="scene">   
-            <div data-depth="0.05" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
+            <div data-depth="0.05" style="width:100vw; height:100vh">
                 <img src="../assets/Ladrillos.jpg"          :class="ClaseLadrillos" />
             </div>
-            <div data-depth="-0.2" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
+            <div data-depth="-0.2" style="width:100vw; height:100vh">
                 <img src="../assets/Fuego3.jpg"             :class="ClaseFuego"     />
             </div>
-            <div data-depth="0.02" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
+            <div data-depth="0.02" style="width:100vw; height:100vh">
                 <img src="../assets/nosotros_ivan.png"      :class="ClaseImagen"    style="position:absolute; bottom:-1%; right:-1%"/>
             </div>            
         </div>
@@ -32,8 +32,8 @@
     export default 
     {   data()
         {   return {
-                Ancho:              window.innerWidth  * 97 /100,
-                Alto:               window.innerHeight * 97 /100,
+                Ancho:              window.innerWidth,
+                Alto:               window.innerHeight,
                 ClaseFuego:         'FuegoHorizontal3',
                 ClaseImagen:        'ImagenHorizontal',
                 ClaseLadrillos:     'LadrillosHorizontal',

@@ -1,9 +1,13 @@
 <template>
     <div id="classroom">
 
-        <div id="divAntes"   :class="ClaseAntes"    :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }"></div>
+        <div class="divDivisor">
+            Quiénes Somos
+        </div>
 
-        <div id="divDespues" :class="ClaseDespues"  :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }"></div>
+        <div id="divAntes"   :class="ClaseAntes"    style="width:100vw; height:100vh"></div>
+
+        <div id="divDespues" :class="ClaseDespues"  style="width:100vw; height:100vh"></div>
 
     </div>
 </template>
@@ -14,8 +18,8 @@
     export default 
     {   data()
         {   return {
-                Ancho:              window.innerWidth  * 97 /100,
-                Alto:               window.innerHeight * 100 /100, 
+                Ancho:              window.innerWidth,
+                Alto:               window.innerHeight, 
                 ClaseAntes:         'AntesHorizontal',
                 ClaseDespues:       'DespuesHorizontal',
             }
@@ -49,5 +53,17 @@
     }    
     .AntesVertical, .DespuesVertical
     {   background-position: 10%;
+    }
+
+    .divDivisor
+    {   width: 100vw; 
+        background: #000; 
+        color: #fff; 
+        text-align: center; 
+        font-weight: bold; 
+        font-size: x-large; 
+        padding: 10px; 
+        border-top: 1px solid #fff;
+        border-bottom: 1px solid #fff;
     }
 </style>

@@ -1,13 +1,13 @@
 <template>
-    <div id="nahuel" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }" style="overflow:hidden !important">
+    <div id="nahuel" style="width:100vw; height:97vh; overflow:hidden !important">
         <div id="scene">   
-            <div data-depth="0.05" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
+            <div data-depth="0.05" style="width:100vw; height:100vh">
                 <img src="../assets/Ladrillos.jpg"          :class="ClaseLadrillos" />
             </div>
-            <div data-depth="-0.5" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
+            <div data-depth="-0.5" style="width:100vw; height:100vh">
                 <img src="../assets/Fuego2.jpg"             :class="ClaseFuego"     />
             </div>
-            <div data-depth="0.02" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
+            <div data-depth="0.02" style="width:100vw; height:100vh">
                 <img src="../assets/nosotros_nahuel.png"     :class="ClaseImagen"    style="position:absolute; bottom:-1%; right:2%"/>
             </div>            
         </div>
@@ -31,8 +31,8 @@
     export default 
     {   data()
         {   return {
-                Ancho:              window.innerWidth  * 97 /100,
-                Alto:               window.innerHeight * 97 /100,
+                Ancho:              window.innerWidth,
+                Alto:               window.innerHeight,
                 ClaseFuego:         'FuegoHorizontal',
                 ClaseImagen:        'ImagenHorizontalG',
                 ClaseLadrillos:     'LadrillosHorizontal',
@@ -134,9 +134,9 @@
         transition: all 700ms ease-in-out;
     }
     #CV_Nahuel.TextoVertical.fadein
-    {   top: 5%;        
+    {   top: 10%;        
         opacity: 1;
-        font-size: 3.8vw; 
+        font-size: 4.5vw; 
         transition: opacity 7s;
         -webkit-transition: all 700ms ease-in-out;
         -moz-transition: all 700ms ease-in-out;

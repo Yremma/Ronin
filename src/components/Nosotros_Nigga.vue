@@ -1,13 +1,13 @@
 <template>
-    <div id="nigga" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }" style="overflow:hidden !important">
+    <div id="nigga" style="width:100vw; height:97vh; overflow:hidden !important">
         <div id="scene">   
-            <div data-depth="0.05" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
+            <div data-depth="0.05" style="width:100vw; height:100vh">
                 <img src="../assets/Ladrillos.jpg"          :class="ClaseLadrillos" />
             </div>
-            <div data-depth="-0.2" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
+            <div data-depth="-0.2" style="width:100vw; height:100vh">
                 <img src="../assets/Humo4.jpg"             :class="ClaseHumo"       />
             </div>
-            <div data-depth="0.02" :style="{ 'height': Alto + 'px', 'width': Ancho + 'px' }">
+            <div data-depth="0.02" style="width:100vw; height:100vh">
                 <img src="../assets/nosotros_nigga.png"     :class="ClaseImagen"    style="position:absolute; bottom:-5%; right:-1%"/>
             </div>            
         </div>
@@ -15,11 +15,7 @@
         <div id="CV_Nigga" :class="ClaseTexto">
             <center style="font-family:'Permanent Marker'; margin-bottom:20px">Nigga</center>
             <hr>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
-            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
-            in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+            Sonidista, Locutor y Presentador.<br><br>
             En Ronin desde el 13 de Abril de 2013.
         </div>
     </div>
@@ -34,8 +30,8 @@
     export default 
     {   data()
         {   return {
-                Ancho:              window.innerWidth  * 97 /100,
-                Alto:               window.innerHeight * 97 /100,
+                Ancho:              window.innerWidth,
+                Alto:               window.innerHeight,
                 ClaseHumo:          'HumoHorizontal4',
                 ClaseImagen:        'ImagenHorizontalG',
                 ClaseLadrillos:     'LadrillosHorizontal',
@@ -127,9 +123,9 @@
 
     #CV_Nigga.TextoHorizontal.fadein
     {   width: 40%;
-        top: 5%;        
+        top: 15%;        
         opacity: 1;
-        font-size: 2vw; 
+        font-size: 3vw; 
         transition: opacity 7s;
         -webkit-transition: all 700ms ease-in-out;
         -moz-transition: all 700ms ease-in-out;
@@ -138,9 +134,9 @@
         transition: all 700ms ease-in-out;
     }
     #CV_Nigga.TextoVertical.fadein
-    {   top: 5%;        
+    {   top: 15%;        
         opacity: 1;
-        font-size: 3.8vw; 
+        font-size: 6vw; 
         transition: opacity 7s;
         -webkit-transition: all 700ms ease-in-out;
         -moz-transition: all 700ms ease-in-out;
