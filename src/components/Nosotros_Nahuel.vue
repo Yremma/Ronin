@@ -55,6 +55,9 @@
             setTimeout(function() { 
                 var CV = document.getElementById('CV_Nahuel');
                 CV.classList.toggle('fadein');
+                setInterval(function() { 
+                    CV.classList.toggle('fadein');
+                }, 24000);
             }, 2000); 
         }
     }
@@ -122,6 +125,17 @@
     {   width: 80%;
     }
 
+    #CV_Nahuel.TextoHorizontal
+    {   font-size: 0%;
+        top: 90%;
+        opacity: 0;
+        transition: opacity 7s;
+        -webkit-transition: all 700ms ease-in-out;
+        -moz-transition: all 700ms ease-in-out;
+        -o-transition: all 700ms ease-in-out;
+        -ms-transition: all 700ms ease-in-out;
+        transition: all 700ms ease-in-out; 
+    }    
     #CV_Nahuel.TextoHorizontal.fadein
     {   top: 5%;        
         opacity: 1;

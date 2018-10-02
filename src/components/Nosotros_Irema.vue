@@ -60,7 +60,11 @@
             setTimeout(function() { 
                 var CV = document.getElementById('CV_Irema');
                 CV.classList.toggle('fadein');
-            }, 21000); 
+                setInterval(function() { 
+                    var CV = document.getElementById('CV_Irema');
+                    CV.classList.toggle('fadein');
+                }, 25000);
+            }, 21000);
         }
     }
 </script>
@@ -126,6 +130,17 @@
     {   width: 80%;
     }
 
+    #CV_Irema.TextoHorizontal
+    {   font-size: 0%;
+        top: 90%;
+        opacity: 0;
+        transition: opacity 7s;
+        -webkit-transition: all 700ms ease-in-out;
+        -moz-transition: all 700ms ease-in-out;
+        -o-transition: all 700ms ease-in-out;
+        -ms-transition: all 700ms ease-in-out;
+        transition: all 700ms ease-in-out; 
+    } 
     #CV_Irema.TextoHorizontal.fadein
     {   top: 5%;        
         opacity: 1;

@@ -55,7 +55,11 @@
             setTimeout(function() { 
                 var CV = document.getElementById('CV_Flaco');
                 CV.classList.toggle('fadein');
-            }, 6000); 
+                setInterval(function() { 
+                    var CV = document.getElementById('CV_Flaco');
+                    CV.classList.toggle('fadein');
+                }, 25000);
+            }, 6000);
         }
     }
 </script>
@@ -121,6 +125,17 @@
     {   width: 80%;
     }
 
+    #CV_Flaco.TextoHorizontal
+    {   font-size: 0%;
+        top: 90%;
+        opacity: 0;
+        transition: opacity 7s;
+        -webkit-transition: all 700ms ease-in-out;
+        -moz-transition: all 700ms ease-in-out;
+        -o-transition: all 700ms ease-in-out;
+        -ms-transition: all 700ms ease-in-out;
+        transition: all 700ms ease-in-out; 
+    } 
     #CV_Flaco.TextoHorizontal.fadein
     {   top: 10%;        
         opacity: 1;

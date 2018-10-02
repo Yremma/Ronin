@@ -55,7 +55,11 @@
             setTimeout(function() { 
                 var CV = document.getElementById('CV_Oso');
                 CV.classList.toggle('fadein');
-            }, 38000); 
+                setInterval(function() { 
+                    var CV = document.getElementById('CV_Oso');
+                    CV.classList.toggle('fadein');
+                }, 25000);
+            }, 38000);
         }
     }
 </script>
@@ -122,6 +126,17 @@
     {   width: 80%;
     }
 
+    #CV_Oso.TextoHorizontal
+    {   font-size: 0%;
+        top: 90%;
+        opacity: 0;
+        transition: opacity 7s;
+        -webkit-transition: all 700ms ease-in-out;
+        -moz-transition: all 700ms ease-in-out;
+        -o-transition: all 700ms ease-in-out;
+        -ms-transition: all 700ms ease-in-out;
+        transition: all 700ms ease-in-out; 
+    } 
     #CV_Oso.TextoHorizontal.fadein
     {   top: 15%;        
         opacity: 1;
