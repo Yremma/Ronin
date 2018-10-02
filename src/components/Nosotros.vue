@@ -1,5 +1,5 @@
 <template>
-    <div id="nosotros">
+    <div id="nosotros" style="position:relative">
 
         <div class="divDivisor">
             Nosotros

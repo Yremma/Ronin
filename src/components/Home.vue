@@ -10,6 +10,8 @@
         <!-- Nosotros -->
         <Nosotros></Nosotros>
         
+        <!-- Contactanos -->
+        <Contacto></Contacto>
     </div>
 </template>
 
@@ -19,13 +21,15 @@
     import Logo         from '@/components/Logo'
     import Classroom    from '@/components/Classroom'
     import Nosotros     from '@/components/Nosotros'
+    import Contacto     from '@/components/Contacto'
 
     
     export default 
     {   components: {
             Logo,
             Classroom,
-            Nosotros
+            Nosotros,
+            Contacto
         },
 
         mounted()

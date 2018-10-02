@@ -3,6 +3,7 @@
         
         <!-- MENU PANTALLAS --> 
         <el-menu class="hidden-xs-only" mode="horizontal" background-color="#121717" text-color="#ffffff" active-text-color="#ff0000" style="border-bottom:0px">
+            <el-menu-item index="4" style="float:right" v-on:click="ir_a('contacto')"   >Contáctanos        </el-menu-item>
             <el-menu-item index="3" style="float:right" v-on:click="ir_a('nosotros')"   >Nosotros           </el-menu-item>
             <el-menu-item index="2" style="float:right" v-on:click="ir_a('classroom')"  >Quiénes Somos      </el-menu-item>           
             <el-menu-item index="1" style="float:right" v-on:click="ir_a('logo')"       >Inicio             </el-menu-item>  
@@ -17,6 +18,7 @@
                 <div class="el-col el-col-24" style="float:right" v-on:click="ir_a('logo')"     >Inicio         </div>
                 <div class="el-col el-col-24" style="float:right" v-on:click="ir_a('classroom')">Quiénes Somos  </div>
                 <div class="el-col el-col-24" style="float:right" v-on:click="ir_a('nosotros')" >Nosotros       </div>
+                <div class="el-col el-col-24" style="float:right" v-on:click="ir_a('contacto')" >Contáctanos    </div>
             </el-collapse-item>
         </el-collapse>
 

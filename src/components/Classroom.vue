@@ -87,18 +87,6 @@
     {   background-position: 10%;
     }
 
-    .divDivisor
-    {   width: 100vw; 
-        background: #000; 
-        color: #fff; 
-        text-align: center; 
-        font-weight: bold; 
-        font-size: x-large; 
-        padding: 10px; 
-        border-top: 1px solid #fff;
-        border-bottom: 1px solid #fff;
-    }
-
     .Historia
     {   position: absolute;
     }
