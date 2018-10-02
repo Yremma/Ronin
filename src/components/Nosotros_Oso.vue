@@ -95,11 +95,11 @@
     #CV_Oso
     {   position: absolute;
         right: 5%;
-        font-family: 'Gamja Flower';
+        font-family:  'Indie Flower', cursive, 'Shadows Into Light', cursive;
         font-size: 0%;
         font-weight: bold;
         text-align: justify;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.75);
         padding: 20px;
 
         color: #fff;
@@ -125,7 +125,7 @@
     #CV_Oso.TextoHorizontal.fadein
     {   top: 15%;        
         opacity: 1;
-        font-size: 3vw; 
+        font-size: 2.5vw; 
         transition: opacity 7s;
         -webkit-transition: all 700ms ease-in-out;
         -moz-transition: all 700ms ease-in-out;
@@ -136,7 +136,7 @@
     #CV_Oso.TextoVertical.fadein
     {   top: 10%;        
         opacity: 1;
-        font-size: 5.5vw; 
+        font-size: 5vw; 
         transition: opacity 7s;
         -webkit-transition: all 700ms ease-in-out;
         -moz-transition: all 700ms ease-in-out;

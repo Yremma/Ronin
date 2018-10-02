@@ -99,11 +99,11 @@
     #CV_Irema
     {   position: absolute;
         right: 5%;
-        font-family: 'Gamja Flower';
+        font-family:  'Indie Flower', cursive, 'Shadows Into Light', cursive;
         font-size: 0%;
         font-weight: bold;
         text-align: justify;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.75);
         padding: 20px;
 
         color: #f00;
@@ -129,7 +129,7 @@
     #CV_Irema.TextoHorizontal.fadein
     {   top: 5%;        
         opacity: 1;
-        font-size: 2.25vw; 
+        font-size: 1.75vw; 
         transition: opacity 7s;
         -webkit-transition: all 700ms ease-in-out;
         -moz-transition: all 700ms ease-in-out;
@@ -140,7 +140,7 @@
     #CV_Irema.TextoVertical.fadein
     {   top: 5%;        
         opacity: 1;
-        font-size: 4.5vw; 
+        font-size: 4vw; 
         transition: opacity 7s;
         -webkit-transition: all 700ms ease-in-out;
         -moz-transition: all 700ms ease-in-out;

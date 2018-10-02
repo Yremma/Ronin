@@ -94,11 +94,11 @@
     #CV_Nigga
     {   position: absolute;
         left: 5%;
-        font-family: 'Gamja Flower';
+        font-family:  'Indie Flower', cursive, 'Shadows Into Light', cursive;
         font-size: 0%;
         font-weight: bold;
         text-align: justify;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.75);
         padding: 20px;
 
         color: #f00;
@@ -125,7 +125,7 @@
     {   width: 40%;
         top: 15%;        
         opacity: 1;
-        font-size: 3vw; 
+        font-size: 2.5vw; 
         transition: opacity 7s;
         -webkit-transition: all 700ms ease-in-out;
         -moz-transition: all 700ms ease-in-out;
@@ -136,7 +136,7 @@
     #CV_Nigga.TextoVertical.fadein
     {   top: 15%;        
         opacity: 1;
-        font-size: 6vw; 
+        font-size: 5.5vw; 
         transition: opacity 7s;
         -webkit-transition: all 700ms ease-in-out;
         -moz-transition: all 700ms ease-in-out;

@@ -96,11 +96,11 @@
     #CV_Justy
     {   position: absolute;
         left: 5%;
-        font-family: 'Gamja Flower';
+        font-family:  'Indie Flower', cursive, 'Shadows Into Light', cursive;
         font-size: 0%;
         font-weight: bold;
         text-align: justify;
-        background: rgba(0,0,0,0.5);
+        background: rgba(0,0,0,0.75);
         padding: 20px;
 
         color: #fff;
@@ -127,7 +127,7 @@
     {   width: 40%;
         top: 10%;        
         opacity: 1;
-        font-size: 2.5vw; 
+        font-size: 2vw; 
         transition: opacity 7s;
         -webkit-transition: all 700ms ease-in-out;
         -moz-transition: all 700ms ease-in-out;
@@ -138,7 +138,7 @@
     #CV_Justy.TextoVertical.fadein
     {   top: 5%;        
         opacity: 1;
-        font-size: 3.2vw; 
+        font-size: 4vw; 
         transition: opacity 7s;
         -webkit-transition: all 700ms ease-in-out;
         -moz-transition: all 700ms ease-in-out;

@@ -44,10 +44,10 @@
         }, 
 
         methods: {
-            handleScroll (e) {
-                this.Offset = 5 + window.scrollY * 0.03;                
-                var aux     = document.getElementById('Historia');
-                aux.style.top = this.Offset + '%';
+            handleScroll() {
+                this.Offset     = 5 + window.scrollY * 0.03;                
+                var aux         = document.getElementById('Historia');
+                aux.style.top   = this.Offset + '%';
             } 
         },
         
@@ -72,12 +72,12 @@
 
 <style>
    #divAntes 
-    {   background-image: url('../assets/antes.png');
+    {   background-image: url('../assets/antes.jpg');
         background-size: cover;
         background-attachment: fixed;
     }
     #divDespues
-    {   background-image: url('../assets/despues.png');
+    {   background-image: url('../assets/despues.jpg');
         background-size: cover;
         background-attachment: fixed;
     }

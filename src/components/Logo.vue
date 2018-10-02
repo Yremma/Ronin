@@ -52,7 +52,7 @@
 
 <style>
     #logo 
-    {   background-image: url('../assets/Pizarron.png');
+    {   background-image: url('../assets/Pizarron.jpg');
         background-size: cover;
         background-position: center;
         overflow: hidden;
