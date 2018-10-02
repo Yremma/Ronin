@@ -8,7 +8,8 @@
         <Classroom></Classroom>
 
         <!-- Nosotros -->
-
+        <Nosotros></Nosotros>
+        
     </div>
 </template>
 
@@ -17,12 +18,14 @@
 <script>
     import Logo         from '@/components/Logo'
     import Classroom    from '@/components/Classroom'
+    import Nosotros     from '@/components/Nosotros'
 
     
     export default 
     {   components: {
             Logo,
-            Classroom
+            Classroom,
+            Nosotros
         },
 
         mounted()

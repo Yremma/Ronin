@@ -1,6 +1,6 @@
 <template>
     <div id="nahuel" style="width:100vw; height:97vh; overflow:hidden !important">
-        <div id="scene">   
+        <div id="scene_nahuel">   
             <div data-depth="0.05" style="width:100vw; height:100vh">
                 <img src="../assets/Ladrillos.jpg"          :class="ClaseLadrillos" />
             </div>
@@ -42,8 +42,8 @@
         
 
         mounted()
-        {   var scene               = document.getElementById('scene');
-            new Parallax(scene); 
+        {   var scene_nahuel        = document.getElementById('scene_nahuel');
+            new Parallax(scene_nahuel); 
 
             if(this.Alto>this.Ancho)    
             {   this.ClaseFuego     = 'FuegoVertical2';
@@ -55,7 +55,7 @@
             setTimeout(function() { 
                 var CV = document.getElementById('CV_Nahuel');
                 CV.classList.toggle('fadein');
-            }, 3000); 
+            }, 2000); 
         }
     }
 </script>

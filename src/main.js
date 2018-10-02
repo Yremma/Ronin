@@ -1,15 +1,14 @@
 import Vue              from 'vue'
 import Router           from 'vue-router'
 import ElementUI        from 'element-ui'
+import VueAwesomeSwiper from 'vue-awesome-swiper'
 import locale           from 'element-ui/lib/locale/lang/es'
-import VueCookies       from 'vue-cookies'
-import CanvasVideo      from 'vue-canvasvideo'
 
 
 import 'element-theme-default'
 import 'element-ui/lib/theme-chalk/index.css'
 import 'element-ui/lib/theme-chalk/display.css'
-import 'vue-canvasvideo/dist/vuecanvasvideo.min.css'
+import 'swiper/dist/css/swiper.css'
 
 
 import App              from './App.vue'
@@ -24,8 +23,7 @@ import Oso              from '@/components/Nosotros_Oso'
 
 Vue.config.productionTip = false
 Vue.use(ElementUI, { locale })
-Vue.use(VueCookies)
-Vue.use(CanvasVideo)
+Vue.use(VueAwesomeSwiper, /* { default global options } */)
 Vue.use(Router)
 
 

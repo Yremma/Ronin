@@ -1,6 +1,6 @@
 <template>
     <div id="irema" style="width:100vw; height:97vh; overflow:hidden !important">
-        <div id="scene">   
+        <div id="scene_irema">   
             <div data-depth="0.05" style="width:100vw; height:100vh">
                 <img src="../assets/Ladrillos.jpg"          :class="ClaseLadrillos" />
             </div>
@@ -47,8 +47,8 @@
         
 
         mounted()
-        {   var scene               = document.getElementById('scene');
-            new Parallax(scene); 
+        {   var scene_irema         = document.getElementById('scene_irema');
+            new Parallax(scene_irema); 
 
             if(this.Alto>this.Ancho)    
             {   this.ClaseHumo      = 'HumoVertical';
@@ -60,7 +60,7 @@
             setTimeout(function() { 
                 var CV = document.getElementById('CV_Irema');
                 CV.classList.toggle('fadein');
-            }, 3000); 
+            }, 21000); 
         }
     }
 </script>
