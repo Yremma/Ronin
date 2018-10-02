@@ -1,5 +1,5 @@
 <template>
-    <div id="logo" style="height:100vh">
+    <div id="logo" style="height:100vh; z-index:100">
         <div id="scene">                        
             <div data-depth="1"     :class="ClaseFondo1">
                 <img src="../assets/fondo1.png" style="width:100%"/>

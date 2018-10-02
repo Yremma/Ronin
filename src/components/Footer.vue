@@ -13,7 +13,7 @@
                 <a href="http://www.instagram.com/grupo.ronin" target="_blank">
                     <img class="BtnSocial" :src="Instagram"/>
                 </a>
-                <a href="http://wa.me/5493815980295" target="_blank">
+                <a href="http://wa.me/5493816431378" target="_blank">
                     <img class="BtnSocial" :src="Whatsapp"/>
                 </a>
             </el-col>
@@ -92,7 +92,7 @@
         transition: all 300ms ease-in-out; 
     }
     .BtnLaRedMD:hover, .BtnLaRedMD:focus
-    {   color: #00ADAD;
+    {   color: #C0B20E;
         -webkit-transition: all 300ms ease-in-out;
         -moz-transition: all 300ms ease-in-out;
         -o-transition: all 300ms ease-in-out;
