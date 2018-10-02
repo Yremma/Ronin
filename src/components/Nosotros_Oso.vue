@@ -134,9 +134,9 @@
         transition: all 700ms ease-in-out;
     }
     #CV_Oso.TextoVertical.fadein
-    {   top: 10%;        
+    {   top: 5%;        
         opacity: 1;
-        font-size: 5vw; 
+        font-size: 4.2vw; 
         transition: opacity 7s;
         -webkit-transition: all 700ms ease-in-out;
         -moz-transition: all 700ms ease-in-out;

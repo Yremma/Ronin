@@ -138,7 +138,7 @@
     #CV_Justy.TextoVertical.fadein
     {   top: 5%;        
         opacity: 1;
-        font-size: 4vw; 
+        font-size: 3.2vw; 
         transition: opacity 7s;
         -webkit-transition: all 700ms ease-in-out;
         -moz-transition: all 700ms ease-in-out;

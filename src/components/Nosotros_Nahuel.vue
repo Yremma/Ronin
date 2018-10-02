@@ -134,7 +134,7 @@
         transition: all 700ms ease-in-out;
     }
     #CV_Nahuel.TextoVertical.fadein
-    {   top: 10%;        
+    {   top: 5%;        
         opacity: 1;
         font-size: 4.5vw; 
         transition: opacity 7s;

@@ -135,7 +135,7 @@
     #CV_Flaco.TextoVertical.fadein
     {   top: 5%;        
         opacity: 1;
-        font-size: 5.5vw; 
+        font-size: 4.4vw; 
         transition: opacity 7s;
         -webkit-transition: all 700ms ease-in-out;
         -moz-transition: all 700ms ease-in-out;

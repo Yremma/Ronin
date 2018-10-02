@@ -134,7 +134,7 @@
         transition: all 700ms ease-in-out;
     }
     #CV_Nigga.TextoVertical.fadein
-    {   top: 15%;        
+    {   top: 5%;        
         opacity: 1;
         font-size: 5.5vw; 
         transition: opacity 7s;

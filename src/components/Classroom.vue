@@ -12,11 +12,9 @@
         <div class="Historia" id="Historia">
             <el-row type="flex" justify="center">
                 <el-col :span="18" :class="ClaseHistoria">
-                    Somos una banda tucumana de covers de canciones de anime y dibujos animados formada 
-                    en 2013 (originalmente bajo el nombre de Multiplayer) por los músicos Facundo Lopez Sales, 
-                    Javier Esteban Pedrosa y Alvaro Angel Lobo.<br>
-                    En 2017 se sumaron Nahuel Hardoy, Ivan Sosa e Irema Paola Dip para dar inicio a la formación 
-                    de la banda que hoy conocemos.<br><br>
+                    Somos un grupo intérprete  de las bandas sonoras de series y películas de animación 
+                    clásicas y modernas que se consolidó en el 2017 por Facundo Lopez Sales, 
+                    Javier Esteban Pedrosa y Alvaro Angel Lobo, Nahuel Hardoy, Ivan Sosa e Irema Paola Dip.<br><br>
                     Nuestro sonido se destaca por las armonías vocales y los coros, logrando así 
                     interpretaciones mas eufóricas de las canciones para poder brindar un show mas festivo y
                     nuestra puesta en escena se caracteriza por la interacción con el público (al punto de 
