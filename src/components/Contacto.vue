@@ -115,13 +115,18 @@
                             } })
                             .then(response => {
                                 this.Limpiar();
-                                this.$message({
-                                    message: 'Tu mensaje se ha enviado correctamente. En breve estaremos respondiéndote. ¡Muchas Gracias!',
-                                    type: 'success'
-                                });   
+                                this.$alert('Tu mensaje se ha enviado con éxito. En breve estaremos respondiéndote. ¡Muchas Gracias!', 'Mensaje Enviado', {
+                                    confirmButtonText: 'Cerrar',
+                                    type: 'success',
+                                    center: true
+                                })
                             })
                             .catch(e => {
-                                this.$message.error('Ha ocurrido un error. Por favor, intenta nuevamente.');
+                                this.$alert('Ha ocurrido un error. Por favor, intenta nuevamente.', '¡Error!', {
+                                    confirmButtonText: 'Cerrar',
+                                    type: 'warning',
+                                    center: true
+                                })
                             })
                     }
                 });  
@@ -139,5 +144,9 @@
         background-position: center;
         background-attachment: fixed;
         background-repeat: no-repeat;
-    }    
+    }
+
+    .el-message-box__message
+    {   color: #000;
+    }
 </style>
