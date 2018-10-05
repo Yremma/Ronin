@@ -17,7 +17,7 @@
             <hr>
             Programador, Traductor de Inglés y Youtuber.<br>
             Ex Baterista de War Machine (tributo a bandas de Death Metal).<br><br>
-            En Ronin desde el 13 de Abril de 2013.
+            En Ronin desde 2014 (Ex Multiplayer).
         </div>
     </div>
 </template>

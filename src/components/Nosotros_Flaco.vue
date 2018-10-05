@@ -17,7 +17,7 @@
             <hr>
             Actor, Dibujante, Cocinero, Barman, Tenor Lírico.<br>
             Ex guitarrista de Shaggy (Indi Rock) y Mandala (Tributo a The Strokes).<br><br>
-            En Ronin desde el 13 de Abril de 2013.
+            En Ronin desde 2014 (Ex Multiplayer).
         </div>
     </div>
 </template>

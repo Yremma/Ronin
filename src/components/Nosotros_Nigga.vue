@@ -15,8 +15,9 @@
         <div id="CV_Nigga" :class="ClaseTexto">
             <center style="font-family:'Permanent Marker'; margin-bottom:20px">Nigga</center>
             <hr>
-            Sonidista, Locutor y Presentador.<br><br>
-            En Ronin desde el 13 de Abril de 2013.
+            Técnico en Sonido, Presentador, Músico Instrumentista, pero su instrumento favorito es la guitarra.<br>
+            Co-fundador de Multiplayer y Guitarra Principal (2013-2015).<br><br>
+            En Ronin desde Abril del 2013.
         </div>
     </div>
 </template>
@@ -138,7 +139,7 @@
     } 
     #CV_Nigga.TextoHorizontal.fadein
     {   width: 40%;
-        top: 15%;        
+        top: 10%;        
         opacity: 1;
         font-size: 2.5vw; 
         transition: opacity 7s;
