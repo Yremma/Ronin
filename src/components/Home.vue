@@ -2,16 +2,16 @@
     <div id="home" style="overflow:hidden">
 
         <!-- Logo Principal -->
-        <Logo></Logo>
+        <Logo       style="position:relative"></Logo>
 
         <!-- Classroom -->
-        <Classroom></Classroom>
+        <Classroom  style="position:relative"></Classroom>
 
         <!-- Nosotros -->
-        <Nosotros></Nosotros>
+        <Nosotros   style="position:relative"></Nosotros>
         
         <!-- Contactanos -->
-        <Contacto></Contacto>
+        <Contacto   style="position:relative"></Contacto>
     </div>
 </template>
 

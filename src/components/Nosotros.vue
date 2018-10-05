@@ -1,21 +1,18 @@
 <template>
-    <div id="nosotros" style="position:relative">
+    <div id="nosotros" style="height:100vh">
 
         <div class="divDivisor">
             Nosotros
         </div>
 
-        <swiper :options="swiperOption" class="swiper-box" style="position:relative">
-            <div class="parallax-bg" slot="parallax-bg" data-swiper-parallax="-23%"></div>
-
-            <swiper-slide><nosotros_-nahuel style="position:relative"></nosotros_-nahuel></swiper-slide>
-            <swiper-slide><nosotros_-flaco style="position:relative"></nosotros_-flaco></swiper-slide>
-            <swiper-slide><nosotros_-nigga style="position:relative"></nosotros_-nigga></swiper-slide>
-            <swiper-slide><nosotros_-irema style="position:relative"></nosotros_-irema></swiper-slide>
-            <swiper-slide><nosotros_-justy style="position:relative"></nosotros_-justy></swiper-slide>
-            <swiper-slide><nosotros_-oso style="position:relative"></nosotros_-oso></swiper-slide>
-
-        </swiper>
+        <div style="position:relative">
+            <nosotros_-nahuel   id="div1"   style="position:absolute"   class="divNosotros divVisible"  ></nosotros_-nahuel>
+            <nosotros_-flaco    id="div2"   style="position:absolute"   class="divNosotros"             ></nosotros_-flaco>
+            <nosotros_-nigga    id="div3"   style="position:absolute"   class="divNosotros"             ></nosotros_-nigga>
+            <nosotros_-irema    id="div4"   style="position:absolute"   class="divNosotros"             ></nosotros_-irema>
+            <nosotros_-justy    id="div5"   style="position:absolute"   class="divNosotros"             ></nosotros_-justy>
+            <nosotros_-oso      id="div6"   style="position:absolute"   class="divNosotros"             ></nosotros_-oso>
+        </div>
     </div>
 </template>
 
@@ -42,22 +39,24 @@
         
         
         data()
-        {   return { 
-                swiperOption: 
-                {   slidesPerView: 1,
-                    mousewheel: false,
-                    speed: 4000,
-                    autoplay: {
-                        delay: 4000,
-                    },                    
-                    effect: 'fade',
-                }        
+        {   return {                 
+                indice: 1,
             }
         }, 
 
 
         mounted()
-        {   
+        {   setTimeout(function() {
+                document.getElementById('div1').classList.toggle('divVisible');
+                document.getElementById('div2').classList.toggle('divVisible');
+                this.indice = 2;
+                setInterval(function() {
+                    document.getElementById('div' + this.indice).classList.toggle('divVisible');
+                    this.indice         = this.indice + 1;
+                    if(this.indice==7)  this.indice = 1;
+                    document.getElementById('div' + this.indice).classList.toggle('divVisible');
+                }, 8000);
+            }, 4000);  
         }  
     }
 </script>
@@ -65,31 +64,20 @@
 
 
 <style>
-    .swiper-slide 
-    {   -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        background-color: transparent!important;
-        justify-content: space-around!important;
+    .divNosotros
+    {   opacity: 0;
+        -webkit-transition: all 2000ms ease-in-out;
+        -moz-transition: all 2000ms ease-in-out;
+        -o-transition: all 2000ms ease-in-out;
+        -ms-transition: all 2000ms ease-in-out;
+        transition: all 2000ms ease-in-out;
     }
-
-    .parallax-bg 
-    {   position: absolute;
-        left: 0;
-        top: 0;
-        width: 130%;
-        height: 100%;
-        -webkit-background-size: 100vw 100vh;
-        background-size: cover;
-        background-position: top;
-        /*background-image: url("../assets/Manos.png");*/
-    }
-    .swiper-slide .title {
-        font-size: 41px;
-        font-weight: 700;
-        font-variant: small-caps;
-    }
-    .swiper-slide .text {
-        font-size: 16px;
-        line-height: 1.3;
+    .divVisible
+    {   opacity: 1;
+        -webkit-transition: all 2000ms ease-in-out;
+        -moz-transition: all 2000ms ease-in-out;
+        -o-transition: all 2000ms ease-in-out;
+        -ms-transition: all 2000ms ease-in-out;
+        transition: all 2000ms ease-in-out;
     }
 </style>
